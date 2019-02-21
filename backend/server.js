@@ -9,8 +9,6 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-console.log(process.env.DB);
-
 //connect to the database
 mongoose.connect(process.env.DB, { useNewUrlParser: true })
     .then(() => console.log(`Database connected successfully`))
